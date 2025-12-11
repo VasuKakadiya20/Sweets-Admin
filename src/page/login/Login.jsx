@@ -51,9 +51,11 @@ export default function LoginPage() {
             />
             <div className="min-h-screen flex items-center justify-center p-4">
                 <div className="bg-white w-full max-w-5xl rounded-2xl grid grid-cols-1 md:grid-cols-2 overflow-hidden">
-                    <form className="p-10 flex flex-col justify-center" onSubmit={handlesubmit}>
+                    <div className="p-10 flex flex-col justify-center" >
+                    {/* <form className="p-10 flex flex-col justify-center" onSubmit={handlesubmit}> */}
                         <h2 className="text-3xl font-bold mb-2 text-[#c19b5a]">Welcome back</h2>
                         <p className="mb-8">Please enter your details</p>
+                        <form onSubmit={handlesubmit}>
 
                         <label className="text-sm font-medium text-gray-700">Email *</label>
                         <input
@@ -78,6 +80,7 @@ export default function LoginPage() {
                         <button type="submit" className="w-full bg-[#c19b5a] text-white py-3 rounded-lg font-medium hover:bg-[#caaa71] transition-all">
                             Sign in
                         </button>
+                        </form>
 
                         <button className="w-full border border-[#c19b5a] py-3 rounded-lg mt-4 flex items-center justify-center gap-3 hover:bg-gray-100 transition-all">
                             <img
@@ -91,7 +94,7 @@ export default function LoginPage() {
                         <p className="mt-6 text-center text-sm">
                             Don’t have an account? <a className="text-blue-600" href="#">Sign up</a>
                         </p>
-                    </form>
+                    </div>
 
                     <div className="hidden md:flex items-center justify-center bg-white p-10">
                         <img
