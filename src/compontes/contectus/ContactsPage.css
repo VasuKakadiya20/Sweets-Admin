@@ -1,0 +1,65 @@
+.contact-banner {
+  position: relative;
+  height: 350px;
+  width: 100%;
+  background-image: url("../../assets/homeimg.jpg");
+  /* background-image: url("https://wgl-dsites.net/estiene/wp-content/uploads/2023/02/pt_contacts.png"); */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+.content h1 {
+  font-size: 60px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.breadcrumb a {
+  color: #c19b5a;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.breadcrumb span {
+  text-transform: uppercase;
+  color: #cfcfcf;
+}
+
+.wave-top {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 25px;
+  background: url("https://svgshare.com/i/16T6.svg") repeat-x;
+  opacity: 0.5;
+}
