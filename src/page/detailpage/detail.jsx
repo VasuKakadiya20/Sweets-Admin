@@ -1,7 +1,7 @@
 import React from 'react'
-import Itemdetailpage from '../../Compontes/ITEM/itemdetailpage'
-import Relatedproduct from '../../Compontes/ITEM/Moreitems'
-import Reviewsection from '../../Compontes/ITEM/reviewsection'
+import Itemdetailpage from '../../compontes/item/itemdetailpage'
+import Relatedproduct from '../../compontes/item/Moreitems'
+import Reviewsection from '../../compontes/item/reviewsection'
 
 function Detailpage() {
   return (
