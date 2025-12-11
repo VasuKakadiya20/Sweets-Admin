@@ -9,7 +9,7 @@ import Detailpage from "./page/detailpage/detail";
 import UpdateItem from "./page/updateitem/update";
 import LoginPage from "./page/login/Login";
 import { createContext, useState } from "react";
-import Navbar from "./Compontes/navbar/Navbar";
+import Navbar from "./Compontes/Navbar/Navbar";
 const myContext = createContext()
 
 function App() {
