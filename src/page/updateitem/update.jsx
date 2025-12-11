@@ -55,7 +55,6 @@ export default function UpdateItem() {
   formData.append("price", form.price);
   formData.append("Description", form.Description);
 
-  // ADD only NEW IMAGES
   newImages.forEach((img) => {
     formData.append("images", img);
   });
@@ -91,7 +90,7 @@ export default function UpdateItem() {
                 name="itemtitle"
                 value={form.itemtitle}
                 onChange={handleChange}
-                className="mt-1 w-full p-4 border border-gray-300 rounded-full"
+                className="mt-1 w-full p-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-[#c19b5a]"
               />
             </div>
 
@@ -102,7 +101,7 @@ export default function UpdateItem() {
                 name="price"
                 value={form.price}
                 onChange={handleChange}
-                className="mt-1 w-full p-4 border border-gray-300 rounded-full"
+                className="mt-1 w-full p-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-[#c19b5a]"
               />
             </div>
 
@@ -113,11 +112,10 @@ export default function UpdateItem() {
                 rows="3"
                 value={form.Description}
                 onChange={handleChange}
-                className="mt-1 w-full p-4 border border-gray-300 rounded-2xl"
+                className="mt-1 w-full p-4 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#c19b5a]"
               ></textarea>
             </div>
 
-            {/* EXISTING IMAGES */}
             <div>
               <label className="font-semibold text-gray-700">Current Images</label>
               <div className="grid grid-cols-3 gap-4 mt-2">
@@ -131,7 +129,6 @@ export default function UpdateItem() {
               </div>
             </div>
 
-            {/* NEW IMAGE UPLOAD */}
             <div>
               <label className="font-semibold text-gray-700">Upload New Images</label>
 
