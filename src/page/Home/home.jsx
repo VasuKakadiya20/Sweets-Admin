@@ -1,10 +1,10 @@
 import React, { useContext, useEffect } from 'react'
-import IndianSweetsSection from '../../Compontes/Herosection/homehero'
-import Certifications from '../../Compontes/Aboutus/Priority'
-import Bestseller from '../../Compontes/home/product'
+import IndianSweetsSection from '../../Components/Herosection/homehero'
+import Certifications from '../../Components/Aboutus/Priority'
+import Bestseller from '../../Components/home/product'
 import img3 from '../../assets/about-us.png'
 import { myContext } from '../../App'
-import Contectusbox from '../../Compontes/contectus/contectusbox'
+import Contectusbox from '../../Components/contectus/contectusbox'
 
 function Home() {
     const context = useContext(myContext)

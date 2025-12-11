@@ -1,7 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes, useNavigate } from "react-router-dom";
 import './App.css'
 import Home from "./page/Home/home";
-import Footer from "./Compontes/Footer/footer";
+import Footer from "./Components/Footer/footer";
 import Items from "./page/Items/items";
 import AddNewItem from "./page/additem/AddItempage";
 import UserProfile from "./page/user/user";
@@ -9,7 +9,7 @@ import Detailpage from "./page/detailpage/detail";
 import UpdateItem from "./page/updateitem/update";
 import LoginPage from "./page/login/Login";
 import { createContext, useState } from "react";
-import Navbar from "./Compontes/Navbar/Navbar";
+import Navbar from "./Components/Navbar/Navbar";
 const myContext = createContext()
 
 function App() {
