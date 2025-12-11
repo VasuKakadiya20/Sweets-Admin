@@ -4,7 +4,7 @@ import Certifications from '../../Compontes/Aboutus/Priority'
 import Bestseller from '../../Compontes/home/product'
 import img3 from '../../assets/about-us.png'
 import { myContext } from '../../App'
-import Contectusbox from '../../compontes/contectus/contectusbox'
+import Contectusbox from '../../Compontes/contectus/contectusbox'
 
 function Home() {
     const context = useContext(myContext)

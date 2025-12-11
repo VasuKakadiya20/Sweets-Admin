@@ -1,7 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes, useNavigate } from "react-router-dom";
 import './App.css'
 import Home from "./page/Home/home";
-import Footer from "./compontes/Footer/footer";
+import Footer from "./Compontes/Footer/footer";
 import Items from "./page/Items/items";
 import AddNewItem from "./page/additem/AddItempage";
 import UserProfile from "./page/user/user";

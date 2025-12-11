@@ -1,5 +1,5 @@
 import React from 'react'
-import ProductPage from '../../compontes/item/itempage'
+import ProductPage from '../../Compontes/item/itempage'
 
 function Items() {
   return (
