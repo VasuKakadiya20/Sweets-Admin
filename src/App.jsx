@@ -1,6 +1,6 @@
 import { BrowserRouter, Navigate, Route, Routes, useNavigate } from "react-router-dom";
 import './App.css'
-import Navbar from "./compontes/Navbar/Navbar";
+// import Navbar from "./compontes/Navbar/Navbar";
 import Home from "./page/Home/home";
 import Footer from "./compontes/Footer/footer";
 import Items from "./page/Items/items";
@@ -28,10 +28,10 @@ function App() {
     <>
     <myContext.Provider value={value}>
     <BrowserRouter>
-    {
+    {/* {
               hideHeaderandFooter !== true &&
     <Navbar/>
-}
+} */}
        <div className='ailgn-center'>
           <Routes>
             <Route path="/" element={islogin ? <Home /> : <Navigate to="/login"/>} />
