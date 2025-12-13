@@ -23,9 +23,9 @@ function Footer() {
           <div className="space-y-4">
             <h3 className="text-xl text-[#c19b5a] font-semibold">Explore</h3>
             <div className="space-y-2 text-gray-400 text-sm">
-              <p><span className="font-semibold text-[#c19b5a]"><FaPhoneAlt /></span> +1 800 123 456 78</p>
-              <p><span className="font-semibold text-[#c19b5a]"><FaMapMarkerAlt /></span> 5 Rue Dalou, 75015 Paris</p>
-              <p><span className="font-semibold text-[#c19b5a]"><FaEnvelope /></span> Info@Dairy.com</p>
+              <p className='flex gap-2'><span className="font-semibold text-[#c19b5a]"><FaPhoneAlt /></span> +91 99461 37919</p>
+              <p className='flex gap-2'><span className="font-semibold text-[#c19b5a]"><FaMapMarkerAlt /></span> 34 Gandhi Road,Surat.</p>
+              <p className='flex gap-2'><span className="font-semibold text-[#c19b5a]"><FaEnvelope /></span> Info@Dairy.com</p>
             </div>
           </div>
 
