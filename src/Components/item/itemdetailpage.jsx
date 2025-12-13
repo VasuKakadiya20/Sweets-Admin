@@ -7,7 +7,6 @@ function Itemdetailpage() {
   const { id } = useParams();
   const [product, setProduct] = useState(null); 
   const [activeImage, setActiveImage] = useState(null);
-  const [quantity, setQuantity] = useState(1);
 
   useEffect(() => {
     fetchDataFromApi(`/Item/${id}`).then((res) => {
@@ -18,15 +17,7 @@ function Itemdetailpage() {
     });
   }, [id]);
 
-  const updateQty = (amount) => {
-    setQuantity((prev) => Math.max(1, prev + amount));
-  };
-
-  const Addtocart = () => {
-    toast.success("Successfully added to cart!");
-  };
-
-  if (!product) return <div>Loading...</div>;
+  if (!product) return <div className='text-2xl text-center text-[#c19b5a] mt-20 '>Loading...</div>;
 
   return (
     <>
@@ -59,22 +50,6 @@ function Itemdetailpage() {
         <div>
           <h2 className="text-2xl font-semibold text-gray-800">{product.itemtitle}</h2>
           <div className="text-xl font-bold text-[#c19b5a] mt-2">₹ {product.price}</div>
-
-{/* 
-          <div className="flex gap-3 mt-4">
-            <div className="flex items-center border border-gray-300 rounded-md">
-              <button className="px-3 py-2 text-lg" onClick={() => updateQty(-1)}>−</button>
-              <span className="px-4 py-2">{quantity}</span>
-              <button className="px-3 py-2 text-lg" onClick={() => updateQty(1)}>+</button>
-            </div>
-
-            <button
-              className="bg-[#c19b5a] text-white px-6 py-3 rounded-md text-sm hover:bg-[#a48145] transition"
-              onClick={Addtocart}
-            >
-              Add to Cart
-            </button>
-          </div> */}
 
           <div className="mt-2">
             <h3 className="text-lg font-semibold mb-2">Description</h3>
