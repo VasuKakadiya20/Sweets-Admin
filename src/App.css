@@ -201,6 +201,7 @@
 }
 /* cart-btn end */
 
+/* Contect Box  */
 .contact-banner {
   position: relative;
   height: 350px;
@@ -248,11 +249,9 @@
 .breadcrumb a {
   color: #E09F40;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 .breadcrumb span {
-  text-transform: uppercase;
   color: #cfcfcf;
 }
 

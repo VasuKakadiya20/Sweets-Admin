@@ -23,14 +23,19 @@ export default function Navbar() {
 
           <ul className="hidden md:flex items-center gap-10 text-sm font-medium">
             <NavLink to="/" className={({ isActive }) => (isActive ? activeLink : normalLink)}>
-              HOME
+              Home
             </NavLink>
 
             <NavLink to="/items" className={({ isActive }) => (isActive ? activeLink : normalLink)}>
-              ITEMS
+              Item
             </NavLink>
+
+            <NavLink to="/Order" className={({ isActive }) => (isActive ? activeLink : normalLink)}>
+              Order List
+            </NavLink>
+
             <NavLink to="/Additem" className={({ isActive }) => (isActive ? activeLink : normalLink)}>
-              ADD ITEMS
+              Add Items
             </NavLink>
 
           </ul>
@@ -52,17 +57,19 @@ export default function Navbar() {
         {menuOpen && (
           <ul className="flex flex-col gap-4 mt-4 md:hidden text-lg font-medium">
             <NavLink to="/" className={({ isActive }) => (isActive ? activeLink : normalLink)} onClick={() => setMenuOpen(!menuOpen)}>
-              HOME
+              Home
             </NavLink>
-
             <NavLink to="/items" className={({ isActive }) => (isActive ? activeLink : normalLink)} onClick={() => setMenuOpen(!menuOpen)}>
-              ITEMS
+              Items
+            </NavLink>
+            <NavLink to="/items" className={({ isActive }) => (isActive ? activeLink : normalLink)} onClick={() => setMenuOpen(!menuOpen)}>
+              Order List
             </NavLink>
             <NavLink to="/Additem" className={({ isActive }) => (isActive ? activeLink : normalLink)} onClick={() => setMenuOpen(!menuOpen)}>
-              ADD ITEMS
+              Add Items
             </NavLink>
             <NavLink to="/profile" className={({ isActive }) => (isActive ? activeLink : normalLink)} onClick={() => setMenuOpen(!menuOpen)}>
-              ACCOUNT
+              Account
             </NavLink>
 
           </ul>
