@@ -38,11 +38,11 @@ function App() {
             <Routes>
               <Route path="/" element={islogin ? <Home /> : <Navigate to="/login" />} />
               <Route
-                path="/items"
+                path="/Chikki"
                 element={islogin ? <Items /> : <Navigate to="/login" />}
               />
               <Route
-                path="/items/:id"
+                path="/Chikki/:id"
                 element={islogin ? <Detailpage /> : <Navigate to="/login" />}
               />
               <Route

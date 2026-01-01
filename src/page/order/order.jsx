@@ -294,7 +294,7 @@ function ALLOrderlist() {
 
           <Divider sx={{ my: 2 }} />
 
-          <h4 className="font-bold mb-2">Items</h4>
+          <h4 className="font-bold mb-2">Order Items</h4>
 
           <div className="space-y-4">
             {selectedOrder?.items?.map((p) => (

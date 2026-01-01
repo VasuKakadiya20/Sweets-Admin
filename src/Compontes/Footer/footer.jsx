@@ -14,7 +14,7 @@ function Footer() {
           <div className="space-y-4">
             <img src={Logo} alt='Logo' className='h-24'/>
             <p className="text-gray-400 text-sm">
-             Crafting premium Indian sweets with tradition and love. Freshly made every day for unforgettable taste.
+             Delighting you with crunchy, handcrafted chikkis made daily with love and the finest ingredients. Taste the tradition in every bite!
             </p>
             <div className="flex space-x-4 mt-2">
               <a href="https://x.com/" className="hover:text-[#c19b5a]"><FaTwitter /></a>
@@ -27,9 +27,9 @@ function Footer() {
           <div className="space-y-4">
             <h3 className="text-xl text-[#E09F40] font-semibold">Explore</h3>
             <div className="space-y-2 text-gray-400 text-sm">
-              <p className='gap-2'><span className="font-semibold text-[#E09F40]"><FaPhoneAlt /></span> +91 99461 37919</p>
-              <p className='gap-2'><span className="font-semibold text-[#E09F40]"><FaMapMarkerAlt /></span> 34 Gandhi Road,Surat.</p>
-              <p className='gap-2'><span className="font-semibold text-[#E09F40]"><FaEnvelope /></span> Info@MarvelCrunch.com</p>
+            <p className='flex items-start gap-3'><span className="text-[#E09F40]"><FaPhoneAlt /></span>+91 99461 37919</p>
+            <p className="flex items-start gap-3"><span className="text-[#E09F40]"><FaMapMarkerAlt /></span><span className="leading-relaxed">Plot No. 133, Shreeji Textile<br />Velenja Sayan Road, Nr. Ramvatika<br />Velenja – 394150</span></p>
+            <p className='flex items-start gap-3'><span className="text-[#E09F40]"><FaEnvelope /></span>Info@MarvelCrunch.com</p>
             </div>
           </div>
 
@@ -40,14 +40,14 @@ function Footer() {
                 <img src={Chocolate_Chikki} alt="Post 1" className="w-16 h-16 object-cover rounded" />
                 <div>
                   <p className="text-xs text-[#E09F40]">Chocolate Chikki</p>
-                  <p className="text-sm">This is Our Most Selling Product</p>
+                  <p className="text-sm">Rich and crunchy Chocolate Chikki – a delightful treat in every bite!</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <img src={Pista_Chocolate_Chikki} alt="Post 2" className="w-16 h-16 object-cover rounded" />
                 <div>
-                  <p className="text-xs text-[#E09F40] uppercase">Pista Chocolate Chikki</p>
-                  <p className="text-sm">This is Our Most Selling Product</p>
+                  <p className="text-xs text-[#E09F40]">Pista Chocolate Chikki</p>
+                  <p className="text-sm">Crunchy Pista Chocolate Chikki – A perfect blend of nuts and chocolate!</p>
                 </div>
               </div>
             </div>
@@ -56,7 +56,7 @@ function Footer() {
         </div>
 
         <div className=" border-t border-gray-800 pt-3 text-center text-gray-500 text-sm">
-          &copy; 2025 Marvel Crunch. All Rights Reserved.
+          &copy; 2025 Marvel Crunch Chikki. All Rights Reserved.
         </div>
       </footer>
     </>

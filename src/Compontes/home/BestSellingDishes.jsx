@@ -1,20 +1,16 @@
 import { FaShoppingBag } from "react-icons/fa";
-import toast, { Toaster } from "react-hot-toast";
 import shape1 from "../../assets/Best_Selling.png";
 import shape2 from "../../assets/Best_Selling_2.png";
 import shape3 from "../../assets/Best_Selling_3.png";
-import React, { useContext, useEffect, useMemo, useState } from 'react';
-import { mycontext } from '../../App';
-import { fetchDataFromApi, postData } from '../../api';
+import React, { useEffect, useMemo, useState } from 'react';
+import { fetchDataFromApi } from '../../api';
 import "./BestSellingDishes.css"
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 
-
 export default function BestSellingDishes() {
   const [product, setProduct] = useState([]);
   const [quantity, setQuantity] = useState({});
-  const context = useContext(mycontext);
 
   useEffect(() => {
     fetchDataFromApi("/Item/").then((res) => {
@@ -36,10 +32,6 @@ export default function BestSellingDishes() {
 
   return (
     <>
-      <Toaster
-        position="top-right"
-        reverseOrder={false}
-      />
       <section className="bg-[#F4F1EA] py-24 relative">
         <div className="max-w-8xl mx-auto px-6">
           <img
@@ -64,13 +56,12 @@ export default function BestSellingDishes() {
           />
           <div className="text-center mb-14">
             <div className="text-[#E09F40] font-bold tracking-widest mb-2 text-[16px]">
-              POPULAR ITEM
+              MARVEL CRUNCH COLLECTION
             </div>
-            <h2 className="text-[40px] font-bold text-[#713722] mb-5 leading-tight max-lg:text-[32px]">
-              Best Selling Item
+            <h2 className="text-[35px] font-bold text-[#713722] mb-5 leading-tight max-lg:text-[32px]">
+              All Chikki Varieties Available
             </h2>
           </div>
-
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
             {randomTen.map((item, i) => (
@@ -81,7 +72,7 @@ export default function BestSellingDishes() {
                   <FaShoppingBag />
                 </button>
 
-                <Link to={`/items/${item._id}`}>
+                <Link to={`/Chikki/${item._id}`}>
                   <div className="relative z-20 p-6 flex justify-center">
                     <img
                       src={item.images[0]}
@@ -123,8 +114,8 @@ export default function BestSellingDishes() {
           </div>
 
           <button className="px-8 py-3 rounded-md btn-viewall">
-            <a href="/items">
-              View All Item <FaArrowRight />
+            <a href="/Chikki">
+              View All Chikki <FaArrowRight />
             </a>
           </button>
         </div>

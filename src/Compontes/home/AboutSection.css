@@ -59,9 +59,6 @@
   object-fit: cover;
 }
 
-
-
-
 .round-wrapper1 {
   position: absolute;
   left: 90px;
@@ -82,7 +79,6 @@
   width: 220px;
   object-fit: cover; 
 }
-
 
 .round-wrapper2 {
   position: absolute;
@@ -129,7 +125,6 @@
   }
 }
 
-
 .theme-btn {
   position: relative;
   overflow: hidden;
@@ -161,7 +156,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 0;       /* start with 0 width */
+  width: 0;      
   height: 50%;   
   background-color: #713722; 
   transition: width 0.3s cubic-bezier(.785, .135, .15, .86);

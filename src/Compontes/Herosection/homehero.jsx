@@ -1,5 +1,4 @@
 import React from "react";
-import bgimg from "../../assets/bg_img.png"; 
 import heroimg from "../../assets/All_types_home.png";
 import bgimg1 from "../../assets/herobg.png"
 
@@ -28,7 +27,6 @@ export default function ChocolateChikkiSection() {
            style={{ backgroundImage: `url(${heroimg})` }}
         >
           </div>
-
         </div>
     </section>
   );

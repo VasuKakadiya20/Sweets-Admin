@@ -1,15 +1,10 @@
-// other file
-
-import React, { useContext, useEffect, useMemo, useState } from 'react';
-import { mycontext } from '../../App';
-import { fetchDataFromApi, postData } from '../../api';
-import toast, { Toaster } from "react-hot-toast";
+import React, { useEffect, useMemo, useState } from 'react';
+import { fetchDataFromApi } from '../../api';
 import { Link } from "react-router-dom";
 
 export default function BestSellingDishes() {
   const [product, setProduct] = useState([]);
   const [quantity, setQuantity] = useState({});
-  const context = useContext(mycontext);
 
   useEffect(() => {
     fetchDataFromApi("/Item/").then((res) => {
@@ -29,39 +24,8 @@ export default function BestSellingDishes() {
     }));
   };
 
-  const Addtocart = async (item) => {
-    if (context.islogin === true) {
-      try {
-        const userid = localStorage.getItem("username");
-        const qty = quantity[item._id] || 1;
-
-        const cartData = {
-          userid: userid,
-          itemid: item._id,
-          qty: qty,
-          producttitle: item.itemtitle,
-          price: item.price,
-          totalprice: item.price * qty,
-          itemimg: item.images[0]
-        };
-
-        await postData("/Cart/create", cartData);
-        toast.success("Successfully added to cart!");
-      } catch (error) {
-        console.error(error);
-        toast.error("Failed to add to cart!");
-      }
-    } else {
-      toast.error("Please login to add items to cart!");
-    }
-  };
-
   return (
     <>
-      <Toaster
-        position="top-right"
-        reverseOrder={false}
-      />
       <section className="bg-[#F4F1EA] py-16">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h1 className="text-center text-xl text-[#713722] font-bold">Popular Sweets</h1>
@@ -102,7 +66,6 @@ export default function BestSellingDishes() {
                   </div>
                   <button
                     className="bg-white border-1 border-[#E09F40] text-[#E09F40] px-6 py-3 rounded-full text-sm font-semibold hover:bg-[#E09F40]  transition"
-                    onClick={() => Addtocart(item)}
                   >
                     Add to cart
                   </button>
@@ -111,9 +74,9 @@ export default function BestSellingDishes() {
             ))}
           </div>
 
-          <Link to="/items">
+          <Link to="/Chikki">
             <button className="mt-12 bg-[#E09F40] text-white px-6 py-3 rounded-md hover:bg-[#E09F40] transition">
-              View All Items →
+              View All Chikki →
             </button>
           </Link>
         </div>

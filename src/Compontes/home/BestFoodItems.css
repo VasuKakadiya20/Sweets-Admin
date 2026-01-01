@@ -1,6 +1,7 @@
 .container {
         max-width: 1084px;
 }
+
 .single-food-items{
     padding: 24px 25px 30px;
     margin-top: 140px;
@@ -23,6 +24,7 @@
     text-transform: capitalize;
     margin-bottom: 15px;
 }
+
 .single-food-items .item-content .text {
     color: var(--text);
     font-family: var(--body-font);

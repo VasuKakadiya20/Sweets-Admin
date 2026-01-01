@@ -1,6 +1,5 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
-import { FaShoppingBag } from "react-icons/fa";
 import { FaUserAlt } from "react-icons/fa";
 import Logo from "../../assets/Logo_Marvel.png"
 
@@ -26,8 +25,8 @@ export default function Navbar() {
               Home
             </NavLink>
 
-            <NavLink to="/items" className={({ isActive }) => (isActive ? activeLink : normalLink)}>
-              Item
+            <NavLink to="/Chikki" className={({ isActive }) => (isActive ? activeLink : normalLink)}>
+              Chikki
             </NavLink>
 
             <NavLink to="/Order" className={({ isActive }) => (isActive ? activeLink : normalLink)}>
@@ -35,9 +34,8 @@ export default function Navbar() {
             </NavLink>
 
             <NavLink to="/Additem" className={({ isActive }) => (isActive ? activeLink : normalLink)}>
-              Add Items
+              Add Chikki
             </NavLink>
-
           </ul>
 
           <div className="hidden md:flex items-center">
@@ -59,23 +57,21 @@ export default function Navbar() {
             <NavLink to="/" className={({ isActive }) => (isActive ? activeLink : normalLink)} onClick={() => setMenuOpen(!menuOpen)}>
               Home
             </NavLink>
-            <NavLink to="/items" className={({ isActive }) => (isActive ? activeLink : normalLink)} onClick={() => setMenuOpen(!menuOpen)}>
-              Items
+            <NavLink to="/Chikki" className={({ isActive }) => (isActive ? activeLink : normalLink)} onClick={() => setMenuOpen(!menuOpen)}>
+              Chikki
             </NavLink>
-            <NavLink to="/items" className={({ isActive }) => (isActive ? activeLink : normalLink)} onClick={() => setMenuOpen(!menuOpen)}>
+            <NavLink to="/Order" className={({ isActive }) => (isActive ? activeLink : normalLink)} onClick={() => setMenuOpen(!menuOpen)}>
               Order List
             </NavLink>
             <NavLink to="/Additem" className={({ isActive }) => (isActive ? activeLink : normalLink)} onClick={() => setMenuOpen(!menuOpen)}>
-              Add Items
+              Add Chikki
             </NavLink>
             <NavLink to="/profile" className={({ isActive }) => (isActive ? activeLink : normalLink)} onClick={() => setMenuOpen(!menuOpen)}>
               Account
             </NavLink>
-
           </ul>
         )}
       </nav>
-
     </>
   );
 }

@@ -1,8 +1,7 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import Rating from '@mui/material/Rating';
 import { useEffect } from "react";
 import { fetchDataFromApi } from "../../api";
-
 
 function Reviewsection() {
   const [clientreview, setclientreview] = useState([])
@@ -18,7 +17,6 @@ function Reviewsection() {
 
   const totalReviews = clientreview.length;
   const avgRating = clientreview.reduce((sum, r) => sum + r.Rating, 0) / totalReviews;
-
   const starCounts = {
     5: 0,
     4: 0,
@@ -35,7 +33,6 @@ function Reviewsection() {
   const starData = [5, 4, 3, 2, 1].map((star) => {
     const count = starCounts[star];
     const percent = totalReviews ? (count / totalReviews) * 100 : 0;
-
     return { star, count, percent: Math.round(percent) };
   });
 
@@ -61,20 +58,16 @@ function Reviewsection() {
                   <div className="text-yellow-500 mr-2 text-sm">
                     {"★".repeat(item.star)}
                   </div>
-
                   <div className="relative w-44 h-2 bg-gray-200 rounded mr-3">
                     <div
                       className="absolute h-2 bg-yellow-400 rounded"
                       style={{ width: `${item.percent}%` }}
                     ></div>
                   </div>
-
                   <p className="text-sm text-gray-700">{item.count}</p>
                 </div>
               ))}
             </div>
-
-          
           </div>
          
 

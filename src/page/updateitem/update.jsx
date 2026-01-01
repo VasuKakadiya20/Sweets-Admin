@@ -77,13 +77,13 @@ export default function UpdateItem() {
         <div className="max-w-3xl w-full bg-white rounded-2xl shadow-[0_5px_40px_rgba(0,0,0,0.1)] p-10">
 
           <h2 className="text-center text-[#713722] text-3xl font-bold mb-8">
-            Update Item
+            Update Chikki
           </h2>
 
           <form onSubmit={handleSubmit} className="space-y-6">
 
             <div>
-              <label className="font-semibold text-gray-700">Item Title *</label>
+              <label className="font-semibold text-gray-700">Chikki Title *</label>
               <input
                 type="text"
                 name="itemtitle"
