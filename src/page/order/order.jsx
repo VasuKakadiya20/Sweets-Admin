@@ -111,7 +111,7 @@ function ALLOrderlist() {
 
       body: [
         [{ content: "Subtotal" }, { content: totalAmount.toFixed(2), styles: { halign: "right", fontStyle: "bold" } }],
-        [{ content: "Shipping" }, { content: "100.00", styles: { halign: "right", fontStyle: "bold" } }],
+        [{ content: "Shipping" }, { content: (Number(item.shipping_Charge)), styles: { halign: "right", fontStyle: "bold" } }],
         [{ content: "Total" }, { content: (Number(item.Total)).toFixed(2), styles: { halign: "right", fontStyle: "bold" } }]
       ]
     });
@@ -310,7 +310,7 @@ function ALLOrderlist() {
               </div>
             ))}
           </div>
-          <p className="text-end font-bold">shipping Charge : ₹ 100</p>
+          <p className="text-end font-bold">shipping Charge : ₹ {selectedOrder?.shipping_Charge}</p>
           <p className="mt-2 text-end font-bold">Total : ₹ {selectedOrder?.Total}</p>
 
         </DialogContent>
