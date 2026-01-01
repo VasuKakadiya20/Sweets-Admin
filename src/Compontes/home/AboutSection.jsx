@@ -53,7 +53,7 @@ export default function AboutSectionHome() {
           </h2>
 
           <p className="text-[#666] text-[16px] leading-[1.8] mb-8 text-center">
-            At Marvel Crunch Chikki, we craft premium traditional chikki made from freshly roasted peanuts and pure jaggery. Every bite delivers rich flavor, satisfying crunch, and the authentic taste of heritage you can trust.
+            At <b>Marvel Crunch Chikki</b>, we craft premium traditional chikki made from freshly roasted peanuts and pure jaggery. Every bite delivers rich flavor, satisfying crunch, and the authentic taste of heritage you can trust.
           </p>
 
           <a href="/Chikki" className="px-8 py-3 theme-btn">
